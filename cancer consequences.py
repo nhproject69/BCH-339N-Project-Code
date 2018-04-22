@@ -4,7 +4,7 @@ from pprint import pprint
 from xlrd import open_workbook
 mutation_aa = []
 #Takes cancer data in json format
-with open('mutations.2018-04-18.json') as json_data:
+with open('mutations.2018-04-18.json') as json_data: #For CLPTM1L, same was done for CLPTM1
     d = json.load(json_data)
     for i in range(len(d)):
         dict_aa = d[i]
